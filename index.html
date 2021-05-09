@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+            <h1 id="title"> RETO-FORMULARIO </h1>
+            <p id="description">Tenemos una entrada de datos que registra datos de usuario y algunas de sus preferencias
+                <br> y pensamientos en cuanto a academia geek, incluyendo entre ellos sus metas o sus obetivo de estudio</p>
+        </span>
+    </div>
+
+    <form id="survey-form" action="" class="formulario">
+        <h1 class="formulario-titulo">contactenos</h1>
+
+        <label id="number-label" for="name" class="formulario_label">nombre</label>
+        <input type="text" class="formulario_input" id="name" placeholder="por favor ingresa tu nombre completo">
+
+        <label id="email-label" for="email" class="formulario_label">correo</label>
+        <input type="email" class="formulario_input" id="email"
+            placeholder="por favor ingresa tu direccion de correo electronico">
+
+        <label id="number-label" for="number" class="formulario_label">edad</label>
+        <input type="number" class="formulario_input" id="number" min="1000000000" max="9999999999"
+            placeholder="por favor ingresa tu edad actual">
+
+        <label for="dropdown" class="formulario_label">programa al que deseas aplicar</label>
+        <select class="formulario_input opciones_dropdown" name="menu_desplegable" id="dropdown" required>
+            <option>
+            <option id="primera_opcion" class="opciones_dropdown" value="estudiante">estudiante</option>
+
+            <option id="segunda_opcion" class="opciones_dropdown" value="profesor">profesor</option>
+
+            <option id="tercera_opcion" class="opciones_dropdown" value="coordinador">coordinador</option>
+
+            <option id="cuarta_opcion" class="opciones_dropdown" value="rector">rector</option>
+
+            <option id="quinta_opcion" class="opciones_dropdowm" value="psicologo(a)">psicologo(a)</option>
+
+            </option>
+        </select>
+
+        <div class="radios">
+
+            <label id="number-label" for="number" class="formulario_label">¿recomendarias academia geek a un conocido?
+            </label>
+
+            <label class="label-radio" for="radio-basico">
+                <input class="input radio" type="radio" name="recomendation" id="radio-basico" value="si" />si
+            </label>
+            <label class="label-radio" for="radio-intermedio">
+                <input class="input radio" type="radio" name="recomendation" id="radio-intermedio" value="tal vez" />tal
+                vez
+            </label>
+            <label class="label-radio" for="radio-avanzado">
+                <input class="input radio" type="radio" name="recomendation" id="radio-avanzado" value="no" />no
+            </label>
+        </div>
+
+        <div class="checkbox">
+
+            <label id="number-label" for="number" class="formulario_label">
+                que programas te gustaria estudiar o enseñar
+            </label>
+
+            <label class="label-checkbox" for="">
+                <input class="input checkbox" type="checkbox" name="progam" id="cursables"
+                    value="Front-end Projects" />Front-end Projects
+            </label>
+            <label class="label-checkbox" for="radio-intermedio">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Back-end Projects" />Back-end Projects
+            </label>
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Data Visualization" />Data Visualization
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Challenges" />Challenges
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Open Source Community" />Open Source Community
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Gitter help rooms" />Gitter help rooms
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables" value="Videos" />Videos
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables" value="City Meetups" />City
+                Meetups
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables" value="Wiki" />Wiki
+
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables" value="Forum" />Forum
+            </label>
+
+            <label class="label-checkbox" for="radio-avanzado">
+                <input class="input checkbox" type="checkbox" name="program" id="cursables"
+                    value="Additional Courses" />Additional Courses
+            </label>
+        </div>
+
+        <label for="mensaje" class="formulario_label">danos tus opiniones</label>
+        <input type="textarea" class="formulario_input, formulario_textarea"
+            placeholder="si tienes una sugerencia, por favor dinos para poder mejorar">
+
+        <input type="submit" class="formulario_submit" id="submit">
+
+    </form>
+</body>
+
+</html>
